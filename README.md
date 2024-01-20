@@ -32,6 +32,10 @@ notfound 페이지
 
 반응형 레이아웃 적용
 
+package.json -> main : index.js 삭제 : 없는 파일임
+apikey 노출 확인 및 조치 (검색 후, 개발자모드의 network - payload 시, api 키 확인 가능됨)
+
+
 
 # 예제 4 - 영화 검색 사이트
 

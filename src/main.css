@@ -190,7 +190,7 @@ footer a {
     color: var(--color-primary);
 }
 .headline p {
-    color: var(--color-white-30);
+    color: var(--color-white-20);
 }
 @media (max-width:600px) {
     .headline h1 {
@@ -212,7 +212,7 @@ footer a {
     border: none;
     outline: none;
     font-size: 14px;
-    color: var(--color-white);
+    color: var(--color-white-10);
     background-color: var(--color-area);
 }
 .search input::placeholder {

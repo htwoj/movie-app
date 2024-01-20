@@ -6,3 +6,9 @@ const root = document.querySelector('#root')
 root.append(new App().el)
 // 라우터를 실행
 router()
+
+;(async ()=>{
+   const res = await fetch('/api/test')
+   const json = await res.json()
+   console.log('/api/test',json )
+})()
