@@ -1,3 +1,4 @@
+/* Common */
 html {
     --color-black:#0E111B;
     --color-white: #FFF;
@@ -17,6 +18,8 @@ body {
     color: var(--color-white);
 }
 
+
+/* Container */
 .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -33,6 +36,8 @@ body {
     }
 }
 
+
+/* Button */
 .btn {
     height: 50px;
     padding: 0 20px;
@@ -58,6 +63,8 @@ body {
 
 }
 
+
+/* Default Loading Animation */
 .the-loader {
     width: 30px;
     height: 30px;
@@ -76,6 +83,7 @@ body {
 }
 
 
+/* Skeleton Loading Animation */
 .skeleton {
     position: relative;
     overflow: hidden;
@@ -103,6 +111,7 @@ body {
 }
 
 
+/* components/TheHeader */
 header {
     padding: 20px 40px;
     background-color: rgba(14,17,27,.9);
@@ -166,6 +175,8 @@ header .user img {
     }
 }
 
+
+/* components/TheFooter */
 footer {
     padding: 40px 40px 60px;
     text-align: center;
@@ -176,7 +187,7 @@ footer a {
 }
 
 
-
+/* components/Headline */
 .headline {
     margin-bottom: 40px;
 }
@@ -199,6 +210,7 @@ footer a {
 }
 
 
+/* components/Search */
 .search {
     display: flex;
     gap: 10px;
@@ -224,6 +236,7 @@ footer a {
 }
 
 
+/* components/MovieList */
 .movie-list {
     padding: 20px;
     border-radius: 4px;
@@ -242,6 +255,7 @@ footer a {
 }
 
 
+/* components/MovieItem */
 .movies .movie {
     --width: 200px;
     width: var(--width);
@@ -283,17 +297,19 @@ footer a {
 }
 
 
+/* components/MovieListMore */
 .view-more {
     width: 100%;
     max-width: 300px;
     margin: 20px auto;
     display: block;
-  }
-  .view-more.hide {
+}
+.view-more.hide {
     display: none;
-  }
+}
 
 
+/* routes/Movie */
 .the-movie {
     color: var(--color-white-50);
     display: flex;
@@ -360,6 +376,7 @@ footer a {
 }
 
 
+/* routes/About */
 .about .photo {
     width: 230px;
     height: 230px;
@@ -382,6 +399,8 @@ footer a {
     text-decoration: none;
 }
 
+
+/* routes/NotFound */
 .not-found h1 {
     font-size: 70px;
     font-weight: 700;

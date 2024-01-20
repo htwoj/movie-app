@@ -14,7 +14,7 @@ export default class Movie extends Component {
             <div class="plot skeleton"></div>
         </div>
         `
-
+        // 영화 상세 정보 가져오기
         await getMovieDetails(history.state.id)
         console.log(movieStore.state.movie)
         const {movie} = movieStore.state

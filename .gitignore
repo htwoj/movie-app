@@ -1,8 +1,11 @@
+# custom
 .parcel-cache
+.env
+start.txt
+
+# editor directories and files
 .vscode
 dist
 # npm install
 node_modules
-# Local Netlify folder
 .vercel
-.env

@@ -4,6 +4,8 @@ import movieStore, {searchMovies} from "../store/movie.js";
 export default class Search extends Component {
     render(){
         this.el.classList.add('search');
+        // 사용자가 뒤로가기 버튼 클릭 시, 검색어를 유지하기 위해
+        // input 요소 value 속성에 기존 검색어 할당 필요
         this.el.innerHTML = /*html*/ `
             <input 
             value="${movieStore.state.searchText}" 
