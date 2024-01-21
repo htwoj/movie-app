@@ -3,7 +3,8 @@
 ## 설명
 - HTML/CSS/JS를 활용하여 영화 검색 사이트 구현
 - OMDB API 사용
-- [DEMO 페이지로 이동](https://movie-app-ivory-six.vercel.app/#/)
+- <a href="https://movie-app-ivory-six.vercel.app/#/" target = "_blank">DEMO 페이지로 이동</a>
+![preview](./src/image/preview.png)
 
 ## 주요 파일/폴더
 대문자 파일 : 모듈
@@ -35,6 +36,7 @@
 
 ## 기타
 **[CSS 변수]**  
+```
 --color-black:#0E111B;  
 --color-white: #FFF;  
 --color-white-50: rgba(255,255,255,.5);  
@@ -45,6 +47,7 @@
 --color-primary: #FDC000;  
 --color-hover: #F86A05;  
 --color-area: #1C212E;  
+```
 
 **[실시간 이미지 리사이징]**
 - 요청된 이미지의 주소 정보에 맞게 서버에서 실시간으로 원본 이미지의 크기를 변경해서 응답하는 방법
