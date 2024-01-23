@@ -1,7 +1,7 @@
 // movies와 페이지 상태 활용
-import { Component } from "../core/core.js";
-import movieStore from "../store/movie.js";
-import MovieItem from "./MovieItem.js";
+import { Component } from "../core/core";
+import movieStore from "../store/movie";
+import MovieItem from "./MovieItem";
 
 export default class MovieList extends Component {
 
@@ -45,7 +45,7 @@ export default class MovieList extends Component {
 
         const loaderEl = this.el.querySelector('.the-loader')
         movieStore.state.loading 
-        ? loaderEl.classList.remove('hide')
-        : loaderEl.classList.add('hide')
+        ? loaderEl?.classList.remove('hide') // 옵셔널 체이닝(element 있을 때만 동작)
+        : loaderEl?.classList.add('hide') // 옵셔널 체이닝(element 있을 때만 동작)
     }
 }

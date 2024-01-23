@@ -1,9 +1,9 @@
 /* ======= 메인 페이지 (페이지 구분 용도) ======= */
-import { Component } from "../core/core.js";
-import Headline from "../components/Headline.js";
-import Search from "../components/Search.js";
-import MovieList from "../components/MovieList.js";
-import MovieListMore from "../components/MovieListMore.js";
+import { Component } from "../core/core";
+import Headline from "../components/Headline";
+import Search from "../components/Search";
+import MovieList from "../components/MovieList";
+import MovieListMore from "../components/MovieListMore";
 
 export default class Home extends Component {
     render() {

@@ -1,4 +1,4 @@
-# 예제 4 - 영화 검색 사이트 - JS
+# 예제 4 - 영화 검색 사이트 - TS
 
 ## 설명
 - HTML/CSS/JS를 활용하여 영화 검색 사이트 구현
@@ -33,6 +33,10 @@
 **store**
 - movie.js // omdb api 정보
 - about.js // about 페이지에 필요한 정보
+**api**
+- movie.js // serverless functions
+**tsconfig.json**
+- ts 구성옵션 지정
 
 ## 기타
 **[CSS 변수]**  
@@ -59,6 +63,7 @@
 - 개발자가 서버를 직접 관리할 필요가 없는 아키텍처로 요청이 들어오면 그 때 자원을 할당해서 요청을 처리하고 다시 자원을 할당하지 않는 대기 상태로 변경
 - apikey 노출 확인 및 조치 (검색 후, 개발자모드의 network - payload 시, api 키 확인 가능됨)
 - package.json 수정 : "type":"module" 추가
+- <a href="https://vercel.com/docs/functions/serverless-functions/runtimes/node-js#using-typescript-with-the-node.js-runtime" target = "_blank">movie.ts 참고 : vercel documentation</a>
 
 **[환경변수]**
 - 프로젝트가 동작하는 환경 자체에 특정 변수를 생성해서 데이터를 담아놓고, 그 환경에서만 데이터를 활용할 수 있는 방법
@@ -66,3 +71,40 @@
 - .env 파일은 apikey를 포함하여 버전관리를 하지 않기 때문에 .gitignore에 포함
 - 환경변수 내용이 많다면 매번 파일을 따로 관리해줘야함
 - VERCEL - ENVIRONMENT VARIABLES 메뉴에 APIKEY 값 추가 필요
+
+**[TS 환경 구축]**
+- ts 설치
+```
+npm i -D typescript
+```
+
+- tsconfig.json 설정
+```
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "strict": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "api/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
+```
+
+**transfrom.tools**
+- JSON -> TS 자동 변환 가능
+
+**node-fetch 설치**
+- 네트워크 요청을 생성하고 응답을 처리하기 위해 사용되는 자바스크립트 API
+```
+npm info @types/node-fetch
+```

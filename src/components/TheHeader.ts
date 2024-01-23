@@ -1,6 +1,15 @@
-import {Component} from '../core/core.js'
+import {Component} from '../core/core'
+
+interface State {
+    [key:string] : unknown
+    menus : {
+        name: string
+        href: string
+    } []
+}
 
 export default class TheHeader extends Component {
+    public state! : State // 초기화 데이터가 존재하지 않지만, 할당 단언으로 할당된 것처럼 정의
     constructor() {
         // 태그명 변경 (div -> header)
         // render()의 this.el은 header로 설정됨

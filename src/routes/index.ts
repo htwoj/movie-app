@@ -1,5 +1,5 @@
 // 프로젝트에서 관리하는 페이지 정리
-import { createRouter } from '../core/core.js'
+import { createRouter } from '../core/core'
 import Home from './Home.js'
 import Movie from './Movie.js'
 import About from './About.js'
